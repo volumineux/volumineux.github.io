@@ -1,0 +1,710 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Days+One&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+    --clr-main-bground: rgb(26, 26, 26);
+    --clr-alt-bground: rgb(45, 46, 48);
+    --clr-links: rgb(54, 49, 31);
+    --clr-text: rgb(242, 233, 233);
+    --clr-motorama-red: rgb(237, 28, 36);
+    --clr-mid-grey: rgb(156, 156, 156);
+    --padding-global: 15px;
+    --max-width-project: 1330px;
+    --font-text: "Space Grotesk", sans-serif;
+    --font-title: "Days One", system-ui;    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Mulish', sans-serif;
+    background-color: var(--clr-main-bground);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: var(--clr-text);
+    line-height: 1.6em;
+}
+
+strong {
+    font-weight: 800;
+}
+
+hr {
+    margin: var(--padding-global);
+    border-top: 1px solid var(--clr-mid-grey);
+}
+
+
+
+/* TRANSITION */
+a {
+    transition: all 300ms ease;
+}
+
+
+/* SCROLLBAR */
+body::-webkit-scrollbar {
+    width: 0.6em;
+}
+   
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0);
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: var(--clr-alt-bground);
+    outline: 1px solid var(--clr-main-bground);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--clr-motorama-red);
+    outline: 1px solid var(--clr-motorama-red);
+}
+
+
+/* SLIDESHOW */
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.slideshow-desktop img {
+    cursor: pointer;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    animation: fade 5s ease-in-out infinite;
+}
+
+.mySlides img {
+    width: 100%;
+    cursor: pointer;
+}
+
+
+/* PANORAMIC IMAGES */
+.panoramic img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/* DESKTOP NAV */
+nav, 
+.nav-links {
+    display: flex;
+} 
+
+#nav-max-width-bckgrnd {
+    position: sticky;
+    top: 0;
+    z-index: 60;
+    background-color: var(--clr-main-bground);
+}
+
+#nav-max-width {
+    position: sticky;
+    top: 0;
+    max-width: var(--max-width-project);
+    margin: 0 auto;
+    z-index: 100;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center; 
+    background-color: var(--clr-main-bground);
+    padding: 0 15px;
+    
+}
+
+#desktop-nav {
+    transition: 0.3s; /* quicker than logo height change on scroll so that it does not clash and jump */
+    height: 60px;
+    z-index: 2;
+}
+
+.nav-links {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1rem;
+}
+
+.nav-links img {
+    height: 20px;
+}
+
+a {
+    color: var(--clr-text);
+    text-decoration: none;
+    text-decoration-color: var(--clr-text);
+}
+  
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+
+.nav-links a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+    text-decoration-color: var(--clr-motorama-red);
+}
+
+.occasions-locations {
+    font-weight: 800;
+}
+
+.logo {
+    height: 30px;
+    transition: 0.4s; /* Adds a transition effect when the height is decreased */
+    align-content: center;
+    margin-top: 6px;
+    transition: all 300ms ease-in-out;
+    filter: saturate(100%) brightness(100%);
+}
+  
+.logo:hover {
+    cursor: pointer;
+    opacity: 90%;
+    transform: scale(0.95);
+    filter: saturate(200%) brightness(80%);
+}
+
+
+  /* HAMBURGER MENU */
+#hamburger-nav {
+    display: none;
+    position: sticky;
+    top: 0;
+    z-index: 60;
+    height: 60px;
+}
+  
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+    z-index: 99;
+}
+  
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+  
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: var(--clr-text);
+    transition: all 0.3 ease-in-out;
+}
+  
+.menu-links {
+    position: absolute;
+    top: 100%;
+    margin-top: 10px;
+    right: 0;
+    background-color: var(--clr-main-bground);
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+  
+.menu-links a {
+    display: block;
+    padding: 2vh 10vw;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--clr-text);
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+  
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links img {
+    height: 40px;
+}
+  
+.menu-links.open {
+    max-height: 600px;
+}
+  
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+  
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+  
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+  
+.hamburger-icon span:first-child {
+    transform: none;
+}
+  
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+  
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+
+/* MOTO AXXE SECTION */
+.moto-axxe {
+    background-color: var(--clr-alt-bground);
+    display: flex;
+    height: 2.5vw;
+    align-items: center;   
+}
+
+.moto-axxe-max-width {
+    max-width: var(--max-width-project);
+    margin: 0 auto;
+    flex: auto;  
+}
+
+.moto-axxe-max-width img {
+    height: 15px;
+    margin-left: 15px;  
+}
+
+.moto-axxe-max-width div {
+    display: inline-flex;
+    font-family: var(--font-text);
+    color: var(--clr-mid-grey);
+    font-size: 1.1vw;
+    margin-left: 15px;  
+}
+
+
+
+
+
+
+/* HERO */
+.hero-overlay-desktop {
+    background-image: linear-gradient(-230deg, rgba(0,0,0,1) 10%, rgba(255,255,255,0) 59%), url('assets/main/hero-image-desktop-black-and-white-motorcycle-close-up.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 75vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: var(--clr-text);
+}
+
+.hero-text-overlay-desktop {
+    width: 50%;
+    height: 100%;
+    padding: 2vw 4vw;
+}
+  
+.hero-text-overlay-desktop .overlay-container-desktop {
+    padding: 6vw 1vw;
+    height: 100%;
+    /* min-width: 50rem; */
+}
+  
+.hero-text-overlay-desktop .overlay-container-desktop > * {
+    margin-bottom: 1vw;
+}
+  
+.hero-text-overlay-desktop .overlay-container-desktop h1 {
+    font-family: var(--font-title);
+    font-size: 5vw;
+    color: var(--clr-text);
+    opacity: 50%;
+}
+
+.hero-text-overlay-desktop p {
+    color: var(--clr-text);
+    font-family: var(--font-text);
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+  
+
+
+/* HERO BUTTON */
+.button-contact {
+    align-items: center;
+    background-clip: padding-box;
+    background-color: var(--clr-motorama-red);
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: var(--clr-text);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: var(--font-text);
+    font-size: 1.5vw;
+    font-weight: 400;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: 1vw 2vw;
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+}
+  
+.button-contact:hover,
+.button-contact:focus {
+    background-color: #ff4747;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+  
+.button-contact:hover {
+    transform: translateY(-1px);
+}
+  
+.button-contact:active {
+    background-color: #c85000;
+    box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+    transform: translateY(0);
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 0.1;
+    }
+
+    20%, 80% {
+        opacity: 1;
+    }
+}
+
+
+/* BRANDS SCROLLER */
+.scroller {
+    max-width: var(--max-width-project);
+    margin: 0 auto;
+    padding-top: 10px;
+}
+  
+.scroller__inner {
+    /* padding-block: 1rem; */
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 1rem; */
+}
+
+.scroller__inner img {
+    height: 60px;
+    /* border: 1px solid var(--clr-mid-grey); */ 
+}
+  
+.scroller[data-animated="true"] {
+    overflow: hidden;
+    -webkit-mask: linear-gradient(
+      90deg,
+      transparent,
+      white 20%,
+      white 80%,
+      transparent
+    );
+    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+  
+.scroller[data-animated="true"] .scroller__inner {
+    width: max-content;
+    flex-wrap: nowrap;
+    animation: scroll var(--_animation-duration, 40s)
+      var(--_animation-direction, forwards) linear infinite;
+}
+  
+.scroller[data-direction="right"] {
+    --_animation-direction: reverse;
+}
+  
+.scroller[data-direction="left"] {
+    --_animation-direction: forwards;
+}
+  
+.scroller[data-speed="fast"] {
+    --_animation-duration: 20s;
+}
+  
+.scroller[data-speed="slow"] {
+    --_animation-duration: 60s;
+}
+  
+@keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
+}
+
+
+/* NEWS SECTION */
+.news {
+    width: 100%;
+    padding: 6vw 0;
+}
+
+.stripe-top {
+    color: var(--clr-text);
+    text-align: center;
+    background: repeating-linear-gradient(
+      -45deg,
+      var(--clr-main-bground),
+      var(--clr-main-bground) 10px,
+      var(--clr-alt-bground) 10px,
+      var(--clr-alt-bground) 20px
+    );
+}
+  
+.stripe-top span {
+    font-family: var(--font-title);
+    font-size: 2vw;
+    text-align: center;
+    background-color: var(--clr-main-bground);
+    padding: 0 2rem;
+    margin: 0;
+}
+
+.stripe-bottom {
+    color: var(--clr-text);
+    text-align: center;
+    background: repeating-linear-gradient(
+      -45deg,
+      var(--clr-main-bground),
+      var(--clr-main-bground) 10px,
+      var(--clr-alt-bground) 10px,
+      var(--clr-alt-bground) 20px
+    );
+}
+  
+.stripe-bottom span {
+    font-family: var(--font-title);
+    font-size: 2vw;
+    text-align: center;
+    background-color: var(--clr-main-bground);
+    padding: 0 2rem;
+    margin: 0;
+    filter: opacity(0);
+}
+
+.facebook-injection {
+    max-width: var(--max-width-project);
+    margin: 0 auto;
+    padding: 2vw 0;
+}
+
+
+/* AVIS SECTION */
+.avis {
+    width: 100%;
+    padding: 6vw 0;
+}
+
+.google-reviews-injection {
+    max-width: var(--max-width-project);
+    margin: 0 auto;
+    padding: var(--padding-global);
+}
+
+
+/* NOUS TROUVER SECTION */  
+.trouver {
+    width: 100%;
+    padding: 6vw 0;
+}
+
+.trouver-container {
+    max-width: var(--max-width-project);
+    margin: 0 auto;
+    padding: 4vw var(--padding-global);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 4vw;
+}
+
+.google-map {
+    overflow:hidden;
+    padding-bottom:40%;
+    position:relative;
+    height:0;
+    flex: 1;
+}
+
+.google-map iframe {
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute; 
+}
+
+.trouver-textes-container {
+    width: 100%;
+    flex: 1;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.2vmin;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--font-title);
+    color: var(--clr-text);
+    font-size: 2vw;
+    text-align: left;
+    padding: 0 2vw;  
+}
+
+.trouver-textes {
+    width: 100%;
+    height: inherit;
+    margin: 0 auto;
+    /* padding: var(--padding-global); */
+    display: flex;
+    flex-wrap: wrap;
+    /* gap: 4vw; */
+    font-family: var(--font-text);
+    font-size: 1.2vw;
+}
+
+.horaires {
+    flex: 1;
+    border-right: 2px solid var(--clr-alt-bground);
+}
+
+.coordonnees {
+    flex: 1;
+    text-align: right;
+    border-left: 2px solid var(--clr-alt-bground);
+}
+
+.icon-phone {
+    height:20px;
+}
+
+.icon-email {
+    height: 16px;
+}
+
+.icon-facebook {
+    width: 20px;
+}
+
+.acces-facile {
+    color: #41a100;
+    font-weight: 700;
+}
+
+.trouver-contact-button {
+    text-align: center;
+}
+
+
+/* EQUIPE SECTION */  
+.equipe {
+    width: 100%;
+    padding: 1vw 0;
+    
+}
+
+.portraits {
+    max-width: var(--max-width-project);
+    margin: 0 auto;
+    padding: 2vw 8vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw 1vw;
+    margin-top: 2vw;
+    
+}
+
+.portraits-card {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    margin: 0 auto;
+    background-color: var(--clr-alt-bground);
+    padding: var(--padding-global);
+    border-radius: 20px;
+    
+}
+
+.portraits-photo img {
+    filter: saturate(0);
+    width: 100%;
+    border-radius: 5%;
+    margin: 0 auto;
+}
+
+.portraits-nom {
+    font-family: var(--font-title);
+    color: var(--clr-text);
+    padding: 1vw 0;
+}
+
+.portraits-texte {
+    font-family: var(--font-text);
+}
+
+
+/* FOOTER SECTION */
+.nav-links-container {
+    margin: 0 auto;
+    padding-top: 6vw;
+}
+
+footer {
+    /* height: 20vh; */
+    margin: 0 auto;
+}
+  
+footer p {
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 2vh;
+    opacity: 50%;
+    background-color: var(--clr-main-bground);
+}
+
+.footer-img {
+    padding-top: 3vw;
+}
+
+.copyright {
+    margin-top: 3vw;
+}
+

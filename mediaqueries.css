@@ -1,0 +1,179 @@
+
+@media screen and (min-width: 1300px) {
+    /* MOTO AXXE SECTION */
+    .moto-axxe {
+        height: 2vw; 
+    }
+    .moto-axxe-max-width div {
+        font-size: 0.9vw;
+    }
+  }
+
+@media screen and (min-width: 1930px) {
+    /* MOTO AXXE SECTION */
+    .moto-axxe {
+        height: 1.5vw; 
+    }
+    .moto-axxe-max-width div {
+        font-size: 0.7vw;
+    }
+  }
+
+  
+
+@media screen and (max-width: 1200px) {
+    /* NAV */
+    #desktop-nav {
+        display: none;
+    }
+    #hamburger-nav {
+        display: flex;
+    }
+  }
+
+  
+@media screen and (max-width: 800px) {
+    /* MOTO AXXE SECTION */
+    .moto-axxe {
+    height: 5vw; 
+    }
+    .moto-axxe-max-width div {
+        display: none; 
+    }
+
+    /* BRANDS SCROLLER */
+    .scroller__inner img {
+        height: 40px;
+    }
+    
+    /* HERO DESKTOP */
+    .hero-overlay-desktop {
+        display: flex;
+        align-items: center;
+    }
+    .hero-text-overlay-desktop {
+        width: 75%;
+        padding: 4vw 8vw;
+    }
+    .hero-text-overlay-desktop .overlay-container-desktop > * {
+        margin-bottom: 3vw;
+    }
+    .hero-text-overlay-desktop .overlay-container-desktop h1 {
+        font-size: 7vw;
+    }
+    .hero-text-overlay-desktop p {
+        font-size: 3vw;
+    }
+
+    /* HERO MOBILE */
+    .hero-overlay-desktop {
+        background-image: linear-gradient(-230deg, rgba(0,0,0,1) 10%, rgba(255,255,255,0) 59%), url('assets/main/hero-image-mobile-black-and-white-motorcycle-close-up.jpg');
+        background-position: right center;
+        height: 82vh;
+    }
+
+    /* HERO BUTTON */
+    .button-contact {
+        font-size: 2vw;
+        padding: 2vw 4vw;
+    }
+
+    /* NEWS SECTION*/
+    .stripe-top span {
+        font-size: 4vw;
+    }     
+    .stripe-bottom span {
+        font-size: 4vw;
+    }
+    
+    /* NOUS TROUVER SECTION*/
+    .google-map {
+        flex: 100%;
+        padding-bottom:56.25%;
+    }
+    .trouver-textes {
+        font-size: 2vw;
+    }
+
+    /* EQUIPE SECTION */
+    .portraits-card {
+        width: 49%;
+        border-radius: 20px;
+    }
+
+    /* SLIDESHOW DESKTOP */
+    .slideshow-desktop {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 800px) {
+    /* SLIDESHOW MOBILE */
+    .slideshow-mobile {
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    /* NAV */
+    .nav-links li a {
+        font-size: 1rem;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+
+    /* MOTO AXXE SECTION */
+    .moto-axxe {
+        height: 7vw; 
+    }
+
+    /* HERO BUTTON */
+    .button-contact {
+        font-size: 3vw;
+        padding: 2vw 4vw;
+    }
+
+    /* NEWS SECTION*/
+    .stripe-top span {
+        font-size: 7vw;
+    }
+      
+    .stripe-bottom span {
+        font-size: 7vw;
+    }
+
+    /* NOUS TROUVER SECTION*/
+    .google-map {
+        flex: 100%;
+        padding-bottom:100%;
+    }
+
+    .trouver-textes {
+        font-size: 3vw;
+    }
+
+    /* FOOTER */
+    footer {
+        /* height: 40vh; */
+        height: 2vh;
+    }
+    footer nav {
+        height: fit-content;
+        margin-bottom: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    /* GALLERY */
+    .gallery-cell  {
+        flex: 100%; /* determines number of columns on mobile */
+    }
+}
