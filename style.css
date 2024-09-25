@@ -312,7 +312,7 @@ a:hover {
 
 /* HERO */
 .hero-overlay-desktop {
-    background-image: linear-gradient(-230deg, rgba(0,0,0,1) 10%, rgba(255,255,255,0) 59%), url('assets/main/hero-image-desktop-black-and-white-motorcycle-close-up.jpg');
+    background-image: linear-gradient(-230deg, var(--clr-main-bground) 10%, rgba(255,255,255,0) 59%), url('assets/main/hero-image-desktop-black-and-rear-motorcycle-close-up.jpg');
     background-size: cover;
     background-position: center center;
     height: 75vh;
@@ -342,7 +342,7 @@ a:hover {
     font-family: var(--font-title);
     font-size: 5vw;
     color: var(--clr-text);
-    opacity: 50%;
+    opacity: 70%;
 }
 
 .hero-text-overlay-desktop p {
@@ -350,6 +350,11 @@ a:hover {
     font-family: var(--font-text);
     font-size: 1.5vw;
     font-weight: 600;
+}
+
+.hero-text-overlay-desktop p a {
+    text-decoration: underline;
+    text-underline-offset: 0.5vw;
 }
   
 
@@ -416,6 +421,7 @@ a:hover {
     max-width: var(--max-width-project);
     margin: 0 auto;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
   
 .scroller__inner {
@@ -469,6 +475,35 @@ a:hover {
     to {
       transform: translate(calc(-50% - 0.5rem));
     }
+}
+
+
+/* INTRO SECTION */
+.intro {
+    background-image: linear-gradient(-230deg, rgba(26,26,26,1) 10%, rgba(255,255,255,0) 59%), url('assets/main/Panoramic-Helmet-Night-Main-Background-Color.jpg');
+    background-size: cover;
+    background-position: center bottom;
+    height: auto;
+    width: 100%;
+    background-color: var(--clr-alt-bground);
+}
+
+
+.intro-textes {
+    max-width: var(--max-width-project);
+    font-family: var(--font-text);
+    margin: 0 auto;
+    padding: 4vw 16vw;
+    text-shadow:
+    3px 3px 0 var(--clr-main-bground),
+    -3px 3px 0 var(--clr-main-bground),
+    -3px -3px 0 var(--clr-main-bground),
+    3px -3px 0 var(--clr-main-bground);
+}
+
+.intro-textes a {
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
 }
 
 
@@ -622,6 +657,10 @@ a:hover {
 
 .icon-facebook {
     width: 20px;
+}
+
+.icon-uk-flag {
+    height: 22px;
 }
 
 .acces-facile {

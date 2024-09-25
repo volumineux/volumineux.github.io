@@ -1,4 +1,18 @@
 
+@media screen and (min-width: 1400px) {
+    /* HERO SECTION */
+    .hero-text-overlay-desktop {
+        padding: 3vw 3vw;
+    }
+    .hero-text-overlay-desktop .overlay-container-desktop {
+        padding: 6vw 3vw;
+    }
+    .hero-text-overlay-desktop p {
+        font-size: 1.4rem;
+        font-weight: 600;
+    }
+}
+
 @media screen and (min-width: 1300px) {
     /* MOTO AXXE SECTION */
     .moto-axxe {
@@ -7,7 +21,17 @@
     .moto-axxe-max-width div {
         font-size: 0.9vw;
     }
-  }
+
+    /* NOUS TROUVER SECTION*/
+    .trouver-textes {
+        font-size: 1rem;
+    }
+    .button-contact {
+        font-size: 1rem;
+        margin: 0;
+        padding: 1vw 2vw;
+    }
+}
 
 @media screen and (min-width: 1930px) {
     /* MOTO AXXE SECTION */
@@ -17,7 +41,7 @@
     .moto-axxe-max-width div {
         font-size: 0.7vw;
     }
-  }
+}
 
   
 
@@ -29,7 +53,7 @@
     #hamburger-nav {
         display: flex;
     }
-  }
+}
 
   
 @media screen and (max-width: 800px) {
@@ -60,6 +84,7 @@
     }
     .hero-text-overlay-desktop .overlay-container-desktop h1 {
         font-size: 7vw;
+        opacity: 65%;
     }
     .hero-text-overlay-desktop p {
         font-size: 3vw;
@@ -76,6 +101,7 @@
     .button-contact {
         font-size: 2vw;
         padding: 2vw 4vw;
+        margin-top: 15px;
     }
 
     /* NEWS SECTION*/
@@ -170,6 +196,24 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    /* HERO DESKTOP */
+    .hero-text-overlay-desktop {
+        width: 100%;
+        padding: 4vw 8vw;
+    }
+    .hero-text-overlay-desktop .overlay-container-desktop > * {
+        margin-bottom: 3vw;
+    }
+    .hero-text-overlay-desktop .overlay-container-desktop h1 {
+        font-size: 9vw;
+        opacity: 65%;
+    }
+    .hero-text-overlay-desktop p {
+        font-size: 4vw;
+        text-shadow: var(--clr-main-bground) 1px 0 10px;
+    }
+}
 
 @media screen and (max-width: 400px) {
     /* GALLERY */
