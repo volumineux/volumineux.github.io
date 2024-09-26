@@ -1,5 +1,4 @@
 /* GENERAL */
-@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Days+One&family=Space+Grotesk:wght@300..700&display=swap');
 
 :root {
@@ -22,7 +21,7 @@
 }
 
 body {
-    font-family: 'Mulish', sans-serif;
+    font-family: var(--font-text);
     background-color: var(--clr-main-bground);
 }
 
@@ -312,10 +311,10 @@ a:hover {
 
 /* HERO */
 .hero-overlay-desktop {
-    background-image: linear-gradient(-230deg, var(--clr-main-bground) 10%, rgba(255,255,255,0) 59%), url('assets/main/hero-image-desktop-black-and-rear-motorcycle-close-up.jpg');
+    background-image: linear-gradient(-230deg, var(--clr-main-bground) 20%, rgba(255,255,255,0) 59%), url('assets/main/hero-image-desktop-black-and-rear-motorcycle-close-up.jpg');
     background-size: cover;
     background-position: center center;
-    height: 75vh;
+    height: 76vh;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -573,6 +572,110 @@ a:hover {
     max-width: var(--max-width-project);
     margin: 0 auto;
     padding: var(--padding-global);
+}
+
+
+/* OCCASIONS LOCATION SECTION */
+.occasions-location {
+    width: 100%;
+}
+
+.occasions-location h3 {
+    color: var(--clr-mid-grey);
+    font-family: var(--font-title);
+    font-size: 1.6rem;
+    padding-bottom: 1vw;
+}
+
+.occasions {
+    max-width: var(--max-width-project);
+    margin: 0 auto;
+    padding: var(--padding-global);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.occasions-textes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: calc(100% / 2);
+    padding: 4vw 4vw;
+}
+
+.occasions-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: calc(100% / 2);
+    padding: 0 4vw;
+}
+
+.occasions-img img {
+    width: 100%;
+}
+
+.stripe-between {
+    color: var(--clr-text);
+    text-align: center;
+    background: repeating-linear-gradient(
+      -45deg,
+      var(--clr-main-bground),
+      var(--clr-main-bground) 10px,
+      var(--clr-alt-bground) 10px,
+      var(--clr-alt-bground) 20px
+    );
+}
+  
+.stripe-between span {
+    font-family: var(--font-title);
+    font-size: 1px;
+    text-align: center;
+    background-color: var(--clr-main-bground);
+    padding: 0 1px;
+    margin: 0;
+    filter: opacity(0);
+}
+.location {
+    max-width: var(--max-width-project);
+    margin: 0 auto;
+    padding: var(--padding-global);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.location-textes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+    flex-basis: calc(100% / 2);
+    padding: 4vw 4vw;
+}
+
+.location-img {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: calc(100% / 2);
+    padding: 0 4vw;
+}
+
+.location-img img {
+    width: 100%;
+}
+
+.occasions-location .stripe-bottom {
+    margin-bottom: 4vw;
+}
+
+.occasions-location .button-contact {
+    margin-top: 2vw;
 }
 
 

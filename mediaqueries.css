@@ -185,6 +185,26 @@
         font-size: 3vw;
     }
 
+    /* OCCASIONS LOCATION SECTION */
+    .occasions-textes {
+        flex-basis: 100%;
+        padding: 4vw 12vw;
+        text-align: center;
+    }
+    .occasions-img {
+        flex-basis: 100%;
+        padding: 0 8vw;
+    }
+    .location-textes {
+        flex-basis: 100%;
+        padding: 4vw 12vw;
+        text-align: center;
+    }
+    .location-img {
+        flex-basis: 100%;
+        padding: 0 8vw;
+    }
+
     /* FOOTER */
     footer {
         /* height: 40vh; */
