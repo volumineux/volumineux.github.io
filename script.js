@@ -24,6 +24,15 @@
               icon.classList.remove("open");
           });
       });
+      
+      // Close menu when clicking a div inside the menu (specific for the modal contact form)
+      const menuLinksDiv = document.querySelectorAll(".menu-links div");
+      menuLinksDiv.forEach(link => {
+          link.addEventListener("click", () => {
+              menu.classList.remove("open");
+              icon.classList.remove("open");
+          });
+      });
   }
 
 /* SLIDESHOW */
@@ -106,22 +115,26 @@ function addAnimation() {
   });
 }
 
+
+/* MODAL POPUP CONTACT FORM */
 // Get modal element
 var modal = document.getElementById("myModal");
 
-// Get button element that opens the modal
-var btn = document.getElementById("openModalBtn");
+// Get all elements that trigger the modal
+var openModalBtns = document.querySelectorAll(".openModalBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var closeBtn = document.getElementsByClassName("close")[0];
 
-// When the user clicks the button, open the modal
-btn.onclick = function() {
-    modal.style.display = "block";
-}
+// Add event listeners to all elements that trigger the modal
+openModalBtns.forEach(function(btn) {
+    btn.onclick = function() {
+        modal.style.display = "block";
+    }
+});
 
 // When the user clicks on <span> (x), close the modal
-span.onclick = function() {
+closeBtn.onclick = function() {
     modal.style.display = "none";
 }
 
