@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Depuis 1975, MOTORAMA vous offre la plus large gamme de marques en Auvergne, moto, scooter, quad thermiques et électriques.">
+    <meta name="keywords" content="Motorama, magasin de motos, vitesse, sports mécaniques, scooter, quads, véhicules électriques, Auvergne, Montluçon, 1975, Daniel Golde">
+
+    <!--  Essential META Tags -->
+    <meta property="og:title" content="Motorama - Magasin de motos à Montluçon">
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="assets/main/motorama-og-thumbnail-2400x1260.jpg">
+    <meta property="og:url" content="index.html">
+    <meta name="twitter:card" content="Motorama - Magasin de motos à Montluçon">
+
+    <!--  Non-Essential, But Recommended -->
+    <meta property="og:description" content="Depuis 1975, MOTORAMA vous offre la plus large gamme de marques en Auvergne, moto, scooter, quad thermiques et électriques.">
+    <meta property="og:site_name" content="Motorama - Magasin de motos à Montluçon">
+    <meta name="twitter:image:alt" content="Motorama Thumbnail with the Motorama Logo on a dark background">
+
+    <title>Motorama - Magasin de motos à Montluçon</title>
+    <link rel="icon" type="image/svg+xml" href="assets/main/favicon.svg">
+    <link rel="icon" type="image/png" href="assets/main/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+    <div id="nav-max-width-bckgrnd">
+    <div id="nav-max-width">
+    <nav id="desktop-nav">
+        <div><a href="index.html" aria-label="Lien vers la page d'accueil"><img class="logo" src="assets/main/Motorama-Logo-SVG.svg" alt="Logotype Motorama"/></a></div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#news" aria-label="Lien vers la section News">News</a></li>
+                <li><a href="index.html#equipe" aria-label="Lien vers la section Equipe">L'équipe</a></li>
+                <li><a href="occasions.html" aria-label="Lien vers la section Occasions"><span class="occasions-locations occasions-link">OCCASIONS</span></a></li>
+                <li><a href="https://www.easyrenter.fr/fr/destinations/france/auvergne/allier/montlucon.html" aria-label="Lien vers la section Location"><span class="occasions-locations">LOCATIONS</span></a></li>
+                <li><a href="index.html#trouver" aria-label="Lien vers la section Nous Trouver"><img src="assets/main/icon-pin-red.svg" alt="localisation pin icon"></a></li>
+                <li><img class="openModalBtn" src="assets/main/icon-email-yellow.svg" alt="email envelope icon"></li>
+                <li><a href="tel:+33470281279" aria-label="Lien vers numéro de téléphone"><img src="assets/main/icon-phone-green.svg" alt="telephone icon"></a></li>
+            </ul>    
+        </div>
+    </nav>
+    </div>
+    </div>
+    <nav id="hamburger-nav">
+        <div><a href="index.html"><img class="logo" src="assets/main/Motorama-Logo-SVG.svg" alt="Logotype Motorama"/></a></div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="index.html#news" aria-label="Lien vers la section News">News</a></li>
+                <li><a href="index.html#equipe" aria-label="Lien vers la section Equipe">L'équipe</a></li>
+                <li><a href="occasions.html" aria-label="Lien vers la section Occasions"><span class="occasions-locations">OCCASIONS</span></a></li>
+                <li><a href="https://www.easyrenter.fr/fr/destinations/france/auvergne/allier/montlucon.html" aria-label="Lien vers la section Location"><span class="occasions-locations">LOCATIONS</span></a></li>
+                <li><a href="index.html#trouver" aria-label="Lien vers la section Nous Trouver"><img src="assets/main/icon-pin-red.svg" alt="localisation pin icon"></a></li>
+                <li> <div><img class="openModalBtn" src="assets/main/icon-email-yellow.svg" alt="email envelope icon"></div> </li>
+                <li><a href="tel:+33470281279" aria-label="Lien vers numéro de téléphone"><img src="assets/main/icon-phone-green.svg" alt="telephone icon"></a></li>
+            </div>
+        </div>
+    </nav> 
+
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="elfsight-app-5024e11b-6470-4a33-944a-c18986c9293f" data-elfsight-app-lazy></div>
+        </div>
+    </div>
+      
+    <section>
+        <div class="moto-axxe">
+            <div class="moto-axxe-max-width">
+                <img src="assets/main/Moto-Axxe-Logo-SVG.svg" alt="Logotype Moto Axxe">
+                <div>Motorama fait partie du réseau Moto-Axxe et vous propose une large gamme d’accessoires & équipements.</div>
+            </div>    
+        </div>
+    </section>
+
+    <section>
+        <div class="iframe-occasions-container">
+            <iframe class="iframe-occasions" src="https://www.piaggio-group-auvergne.fr/occasion?limit=200"></iframe>
+        </div>
+    </section>
+    
+    <footer>
+        <!-- <nav>
+        <div class="nav-links-container">
+            <ul class="nav-links">
+                <li><a href="#news">News</a></li>
+                <li><a href="#equipe">L'équipe</a></li>
+                <li><a href="mailto:volumineux@gmail.com"><span class="occasions-locations">OCCASIONS</span></a></li>
+                <li><a href="https://www.easyrenter.fr/fr/destinations/france/auvergne/allier/montlucon.html"><span class="occasions-locations">LOCATIONS</span></a></li>
+                <li><a href="#trouver"><img src="assets/main/icon-pin-red.svg" alt="localisation pin icon"></a></li>
+                <li><a href="mailto:dg.motorama@gmail.com"><img src="assets/main/icon-email-yellow.svg" alt="email envelope icon"></a></li>
+                <li><a href="tel:+33470281279"><img src="assets/main/icon-phone-green.svg" alt="telephone icon"></a></li>
+            </ul>
+        </div>
+        </nav> -->
+        <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script> MOTORAMA</p>
+        <div class="footer-img"><img src="assets/main/Motorama-Logo-Footer-Bottom-Cut-8K.svg" alt="Logo Motorama Footer"></div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+
+</body>
+</html>
