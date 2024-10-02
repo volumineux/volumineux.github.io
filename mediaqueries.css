@@ -239,6 +239,11 @@
         font-size: 4vw;
         text-shadow: var(--clr-main-bground) 1px 0 10px;
     }
+
+    /* PANORAMIC IMAGES */
+    .panoramic {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 400px) {
