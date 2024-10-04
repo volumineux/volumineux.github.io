@@ -899,6 +899,10 @@ footer p {
 
 
 /* OCCASIONS PAGE */
+.occasions-background {
+    background-color: var(--clr-motorama-red);
+}
+
 .occasions-link {
     color: grey;
     text-decoration: underline;
