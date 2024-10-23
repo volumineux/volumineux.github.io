@@ -240,6 +240,11 @@
         text-shadow: var(--clr-main-bground) 1px 0 10px;
     }
 
+    /* INTRO TEXTS */
+    .intro-textes {
+        font-size: 14px;
+    }
+
     /* PANORAMIC IMAGES */
     .panoramic {
         display: none;
