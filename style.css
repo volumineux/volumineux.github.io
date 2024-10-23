@@ -830,6 +830,7 @@ a:hover {
 
 .portraits-texte p {
     color: var(--clr-mid-grey);
+    line-height: 1.2rem;
 }
 
 
